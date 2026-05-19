@@ -5,188 +5,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/favicon.svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Dashboard | The Odin Project</title>
 </head>
 <body>
-    <div class="container">
-        <section class="side-bar" id="sidebar">
-            <div class="site-brand">
-                <img class="site-logo" src="./assets/logo.svg" alt="Website Logo">
-                <p>Dashboard</p>
-            </div>
-            <div class="side-bar--content">
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Home</a>
+    <main class="container">
+        <div class="left-website">
+            <section class="side-bar" id="sidebar">
+                <div class="site-brand">
+                    <img class="site-logo" src="./assets/logo.svg" alt="Website Logo">
+                    <p>Dashboard</p>
                 </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Profile</a>
+                <div class="side-bar--content">
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Home</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Profile</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Messages</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">History</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Tasks</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Communities</a>
+                    </div>
                 </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Messages</a>
+                <div class="side-bar--extras">
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Settings</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Support</a>
+                    </div>
+                    <div class="side-bar--item">
+                        <img src="" alt="">
+                        <a href="" class="side-bar--link">Privacy</a>
+                    </div>
                 </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">History</a>
+            </section>
+        </div>
+        <div class="right-website">
+            <section class="nav-bar" id="navbar">
+                <div class="top-nav">
+                    <div class="nav-left-side">
+                        <input class="nav--search--input" type="search" id="search">
+                        <button class="nav--search--button"><img class="nav--search--icon" src="./assets/mag-glass.svg"></button>
+                    </div>
+                    <div class="nav-right-side">
+                        <img alt="notification-bell logo" class="nav--notification--icon" src="./assets/notification.svg">
+                        <img alt="Username image" class="nav--user--icon" src="./assets/userph.svg">
+                        <span id="nav-user-name">John Doe</span>
+                    </div>
                 </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Tasks</a>
+                <div class="low-nav">
+                    <div class="nav-left-side">
+                        <img alt="Username image on a bigger ratio" class="main--user--icon" src="./assets/userph.svg">
+                        <p>
+                            Hi there,<br>
+                            <span id="user-name">John Doe (@username)</span>
+                        </p>
+                    </div>
+                    <div class="nav-right-side">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
                 </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Communities</a>
-                </div>
-            </div>
-            <div class="side-bar--extras">
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Settings</a>
-                </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Support</a>
-                </div>
-                <div class="side-bar--item">
-                    <img src="" alt="">
-                    <a href="" class="side-bar--link">Privacy</a>
-                </div>
-            </div>
-        </section>
-        <section class="nav-bar" id="navbar">
-            <div class="top-nav">
-                <div class="nav-left-side">
-                    <input class="nav--search" type="search" id="search">
-                    <button><img></button>
-                </div>
-                <div class="nav-right-side">
-                    <img alt="notification-bell logo">
-                    <img alt="Username image">
-                    <span id="user-name">John Doe</span>
-                </div>
-            </div>
-            <div class="low-nav">
-                <div class="nav-left-side">
-                    <img alt="Username image on a bigger ratio">
-                    <p>
-                        Hi there <br>
-                        <span id="user-name--">John Doe</span>
-                    </p>
-                </div>
-                <div class="nav-right-side">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </div>
-        </section>
-        <section id="mainboard">
-            <div class="porjects">
-                <h2>Your Projects</h2>
-                <div class="card">
-                    <h3 class="card-title">
-                    </h3>
-                    <p class="card-body">
+            </section>
+            <section id="mainboard">
+                <div class="projects">
+                    <h2>Your Projects</h2>
+                    <div class="card">
+                        <h3 class="card-title">
+                        </h3>
+                        <p class="card-body">
 
-                    </p>
-                    <button class="btn-favorite"></button>
-                    <button class="btn-watchlater"></button>
-                    <button class="btn-share"></button>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">
-                    </h3>
-                    <p class="card-body">
-                        
-                    </p>
-                    <button class="btn-favorite"></button>
-                    <button class="btn-watchlater"></button>
-                    <button class="btn-share"></button>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">
-                    </h3>
-                    <p class="card-body">
-                        
-                    </p>
-                    <button class="btn-favorite"></button>
-                    <button class="btn-watchlater"></button>
-                    <button class="btn-share"></button>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">
-                    </h3>
-                    <p class="card-body">
-                        
-                    </p>
-                    <button class="btn-favorite"></button>
-                    <button class="btn-watchlater"></button>
-                    <button class="btn-share"></button>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">
-                    </h3>
-                    <p class="card-body">
-                        
-                    </p>
-                    <button class="btn-favorite"></button>
-                    <button class="btn-watchlater"></button>
-                    <button class="btn-share"></button>
-                </div>
-                <div class="card">
-                    <h3 class="card-title">
-                    </h3>
-                    <p class="card-body">
-                        
-                    </p>
-                    <button class="btn-favorite"></button>
-                    <button class="btn-watchlater"></button>
-                    <button class="btn-share"></button>
-                </div>
-            </div>
-            <div class="announcements">
-                <h3>Announcements</h3>
-                <div class="announcements-tables">
-                    <div class="announcement-item">
-                        <h5 class="announcement-title"></h5>
-                        <p class="announcement-body"></p>
+                        </p>
+                        <button class="btn-favorite"></button>
+                        <button class="btn-watchlater"></button>
+                        <button class="btn-share"></button>
                     </div>
-                    <div class="announcement-item">
-                        <h5 class="announcement-title"></h5>
-                        <p class="announcement-body"></p>
+                    <div class="card">
+                        <h3 class="card-title">
+                        </h3>
+                        <p class="card-body">
+                            
+                        </p>
+                        <button class="btn-favorite"></button>
+                        <button class="btn-watchlater"></button>
+                        <button class="btn-share"></button>
                     </div>
-                    <div class="announcement-item">
-                        <h5 class="announcement-title"></h5>
-                        <p class="announcement-body"></p>
+                    <div class="card">
+                        <h3 class="card-title">
+                        </h3>
+                        <p class="card-body">
+                            
+                        </p>
+                        <button class="btn-favorite"></button>
+                        <button class="btn-watchlater"></button>
+                        <button class="btn-share"></button>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">
+                        </h3>
+                        <p class="card-body">
+                            
+                        </p>
+                        <button class="btn-favorite"></button>
+                        <button class="btn-watchlater"></button>
+                        <button class="btn-share"></button>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">
+                        </h3>
+                        <p class="card-body">
+                            
+                        </p>
+                        <button class="btn-favorite"></button>
+                        <button class="btn-watchlater"></button>
+                        <button class="btn-share"></button>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">
+                        </h3>
+                        <p class="card-body">
+                            
+                        </p>
+                        <button class="btn-favorite"></button>
+                        <button class="btn-watchlater"></button>
+                        <button class="btn-share"></button>
                     </div>
                 </div>
-            </div>
-            <div class="trending-table">
-                <h3>Trending</h3>
-                <div class="trending-item">
-                    <img alt="Trending user profile picture" class="trending-user-pfp">
-                    <h5 class="trending-user-name"></h5>
-                    <p class="trending-project"></p>
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcements-tables">
+                        <div class="announcement-item">
+                            <h5 class="announcement-title"></h5>
+                            <p class="announcement-body"></p>
+                        </div>
+                        <div class="announcement-item">
+                            <h5 class="announcement-title"></h5>
+                            <p class="announcement-body"></p>
+                        </div>
+                        <div class="announcement-item">
+                            <h5 class="announcement-title"></h5>
+                            <p class="announcement-body"></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="trending-item">
-                    <img alt="Trending user profile picture" class="trending-user-pfp">
-                    <h5 class="trending-user-name"></h5>
-                    <p class="trending-project"></p>
+                <div class="trending-table">
+                    <h3>Trending</h3>
+                    <div class="trending-item">
+                        <img alt="Trending user profile picture" class="trending-user-pfp">
+                        <h5 class="trending-user-name"></h5>
+                        <p class="trending-project"></p>
+                    </div>
+                    <div class="trending-item">
+                        <img alt="Trending user profile picture" class="trending-user-pfp">
+                        <h5 class="trending-user-name"></h5>
+                        <p class="trending-project"></p>
+                    </div>
+                    <div class="trending-item">
+                        <img alt="Trending user profile picture" class="trending-user-pfp">
+                        <h5 class="trending-user-name"></h5>
+                        <p class="trending-project"></p>
+                    </div>
+                    <div class="trending-item">
+                        <img alt="Trending user profile picture" class="trending-user-pfp">
+                        <h5 class="trending-user-name"></h5>
+                        <p class="trending-project"></p>
+                    </div>
                 </div>
-                <div class="trending-item">
-                    <img alt="Trending user profile picture" class="trending-user-pfp">
-                    <h5 class="trending-user-name"></h5>
-                    <p class="trending-project"></p>
-                </div>
-                <div class="trending-item">
-                    <img alt="Trending user profile picture" class="trending-user-pfp">
-                    <h5 class="trending-user-name"></h5>
-                    <p class="trending-project"></p>
-                </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
