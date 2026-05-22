@@ -1,199 +1,348 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/favicon.svg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Dashboard | The Odin Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <div class="left-website">
-            <section class="side-bar" id="sidebar">
-                <div class="site-brand">
-                    <img class="site-logo" src="./assets/logo.svg" alt="Website Logo">
-                    <p>Dashboard</p>
+      <div id="left-website">
+        <section class="side-bar" id="sidebar">
+          <div class="site-brand">
+            <img class="site-logo" src="./assets/logo.svg" alt="Website Logo" />
+            <p>Dashboard</p>
+          </div>
+          <div class="side-bar--content">
+            <div class="side-bar--item">
+              <img src="./assets/house.svg" alt="Home page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Home</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/profile.svg" alt="Profile page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Profile</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/messages.svg" alt="Messages page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Messages</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/history.svg" alt="History page icon"  class="side-bar--icon"/>
+              <a href="" class="side-bar--link">History</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/tasks.svg" alt="Tasks page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Tasks</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/group.svg" alt="Communities page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Communities</a>
+            </div>
+          </div>
+          <div class="side-bar--extras">
+            <div class="side-bar--item">
+              <img src="./assets/settings.svg" alt="Settings page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Settings</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/support.svg" alt="Support page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Support</a>
+            </div>
+            <div class="side-bar--item">
+              <img src="./assets/privacy.svg" alt="Privacy page icon" class="side-bar--icon"/>
+              <a href="" class="side-bar--link">Privacy</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="right-website">
+        <section class="nav-bar" id="navbar">
+          <div class="top-nav">
+            <div class="nav-left-side">
+              <input class="nav--search--input" type="search" id="search" />
+              <button class="nav--search--button">
+                <img class="nav--search--icon" src="./assets/mag-glass.svg" />
+              </button>
+            </div>
+            <div class="nav-right-side">
+              <img
+                alt="notification-bell logo"
+                class="nav--notification--icon"
+                src="./assets/notification.svg"
+              />
+              <img
+                alt="Username image"
+                class="nav--user--icon"
+                src="./assets/userph.svg"
+              />
+              <span id="nav-user-name">John Doe</span>
+            </div>
+          </div>
+          <div class="low-nav">
+            <div class="nav-left-side">
+              <img
+                alt="Username image on a bigger ratio"
+                class="main--user--icon"
+                src="./assets/userph.svg"
+              />
+              <p>
+                Hi there,<br />
+                <span id="user-name">John Doe (@username)</span>
+              </p>
+            </div>
+            <div class="nav-right-side">
+              <button id="nav-button-new" class="nav--button">New</button>
+              <button id="nav-button-upload" class="nav--button">Upload</button>
+              <button id="nav-button-share" class="nav--button">Share</button>
+            </div>
+          </div>
+        </section>
+        <section id="mainboard">
+          <div id="section-1">
+            <h2 id="main-section-header">Your Projects</h2>
+            <div id="projects-grid">
+              <div class="card">
+                <h3 class="card-title">Super Cool Landing Page</h3>
+                <p class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  vestibulum non dolor a viverra. Orci varius natoque penatibus
+                  et magnis dis parturient montes, nascetur ridiculus mus.
+                  Pellentesque tincidunt urna at velit tincidunt, ut vestibulum
+                  sem facilisis. Phasellus et maximus arcu. Sed imperdiet
+                  posuere nunc vel mattis. Donec eleifend ligula nec nunc luctus
+                  porttitor. Ut vitae augue vel nisl sodales porta. Vestibulum
+                  posuere ligula nec mauris venenatis, ut venenatis turpis
+                  mollis.
+                </p>
+                <div class="card-buttons">
+                  <button class="card-btn favorite">
+                    <img class="card-btn--icon" src="./assets/star-add.svg" />
+                  </button>
+                  <button class="card-btn watchlater">
+                    <img class="card-btn--icon" src="./assets/seen.svg" />
+                  </button>
+                  <button class="card-btn share">
+                    <img class="card-btn--icon" src="./assets/share.svg" />
+                  </button>
                 </div>
-                <div class="side-bar--content">
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Home</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Profile</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Messages</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">History</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Tasks</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Communities</a>
-                    </div>
+              </div>
+              <div class="card">
+                <h3 class="card-title">Not So Cool Tribute Page</h3>
+                <p class="card-body">
+                  Vestibulum non est ut sapien tempor gravida. Nunc rhoncus
+                  tellus enim, id auctor est ultricies sit amet. Nam quis augue
+                  justo. Nam id porta metus. Ut vehicula a urna eget lacinia.
+                  Cras varius dignissim lectus, id aliquam nisi placerat sit
+                  amet. Curabitur ultricies nibh neque, sed accumsan nunc
+                  vehicula vitae. Phasellus lacinia felis eros, non ornare
+                  lectus blandit vel. Curabitur tincidunt finibus tellus,
+                  consequat bibendum dolor sagittis a.
+                </p>
+                <div class="card-buttons">
+                  <button class="card-btn favorite">
+                    <img class="card-btn--icon" src="./assets/star-add.svg" />
+                  </button>
+                  <button class="card-btn watchlater">
+                    <img class="card-btn--icon" src="./assets/seen.svg" />
+                  </button>
+                  <button class="card-btn share">
+                    <img class="card-btn--icon" src="./assets/share.svg" />
+                  </button>
                 </div>
-                <div class="side-bar--extras">
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Settings</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Support</a>
-                    </div>
-                    <div class="side-bar--item">
-                        <img src="" alt="">
-                        <a href="" class="side-bar--link">Privacy</a>
-                    </div>
+              </div>
+              <div class="card">
+                <h3 class="card-title">Small Form Demo</h3>
+                <p class="card-body">
+                  Suspendisse laoreet ac eros et scelerisque. Nam eleifend arcu
+                  sed tellus faucibus, id fringilla metus auctor. Integer
+                  scelerisque augue ligula, id tincidunt libero pharetra sed.
+                  Sed non neque mauris. Ut sagittis ac leo non auctor. Morbi
+                  suscipit quis lorem sed vehicula. Interdum et malesuada fames
+                  ac ante ipsum primis in faucibus.
+                </p>
+                <div class="card-buttons">
+                  <button class="card-btn favorite">
+                    <img class="card-btn--icon" src="./assets/star-add.svg" />
+                  </button>
+                  <button class="card-btn watchlater">
+                    <img class="card-btn--icon" src="./assets/seen.svg" />
+                  </button>
+                  <button class="card-btn share">
+                    <img class="card-btn--icon" src="./assets/share.svg" />
+                  </button>
                 </div>
-            </section>
-        </div>
-        <div class="right-website">
-            <section class="nav-bar" id="navbar">
-                <div class="top-nav">
-                    <div class="nav-left-side">
-                        <input class="nav--search--input" type="search" id="search">
-                        <button class="nav--search--button"><img class="nav--search--icon" src="./assets/mag-glass.svg"></button>
-                    </div>
-                    <div class="nav-right-side">
-                        <img alt="notification-bell logo" class="nav--notification--icon" src="./assets/notification.svg">
-                        <img alt="Username image" class="nav--user--icon" src="./assets/userph.svg">
-                        <span id="nav-user-name">John Doe</span>
-                    </div>
+              </div>
+              <div class="card">
+                <h3 class="card-title">Product Landing Page</h3>
+                <p class="card-body">
+                  In hac habitasse platea dictumst. Nam tincidunt sagittis
+                  mauris, non porta tortor facilisis a. Quisque congue ultrices
+                  est. Etiam tempus eu nisl vitae pulvinar. Etiam justo leo,
+                  interdum vitae dolor eget, fringilla rhoncus massa. Nulla
+                  tristique porta enim tempor mollis. Phasellus interdum
+                  convallis ante. Vestibulum at ex justo. Ut non feugiat nulla.
+                  Vivamus dapibus, augue nec malesuada porta, mi erat cursus
+                  enim, sed congue neque mi ut leo. Etiam nec ipsum orci. Donec
+                  condimentum id arcu non laoreet. Cras sem leo, tempus at
+                  ultrices at, vestibulum sit amet urna. Donec luctus tempor
+                  urna, placerat volutpat neque dapibus sed. Vivamus dictum sem
+                  quis gravida accumsan. Aliquam tempus, metus vitae sodales
+                  aliquam, augue nunc ornare neque, nec consectetur urna felis
+                  vel lectus.
+                </p>
+                <div class="card-buttons">
+                  <button class="card-btn favorite">
+                    <img class="card-btn--icon" src="./assets/star-add.svg" />
+                  </button>
+                  <button class="card-btn watchlater">
+                    <img class="card-btn--icon" src="./assets/seen.svg" />
+                  </button>
+                  <button class="card-btn share">
+                    <img class="card-btn--icon" src="./assets/share.svg" />
+                  </button>
                 </div>
-                <div class="low-nav">
-                    <div class="nav-left-side">
-                        <img alt="Username image on a bigger ratio" class="main--user--icon" src="./assets/userph.svg">
-                        <p>
-                            Hi there,<br>
-                            <span id="user-name">John Doe (@username)</span>
-                        </p>
-                    </div>
-                    <div class="nav-right-side">
-                        <button>New</button>
-                        <button>Upload</button>
-                        <button>Share</button>
-                    </div>
+              </div>
+              <div class="card">
+                <h3 class="card-title">Placeholder Creator</h3>
+                <p class="card-body">
+                  In metus arcu, consectetur vel turpis vitae, ornare luctus
+                  orci. Maecenas varius pulvinar mauris sit amet accumsan. Duis
+                  pulvinar erat id vulputate auctor. Proin commodo a nisl sit
+                  amet feugiat. Praesent id ornare nibh. Maecenas diam metus,
+                  vestibulum nec scelerisque vitae, faucibus ac est. Mauris mi
+                  diam, facilisis nec arcu ut, ullamcorper vulputate lectus.
+                  Morbi vel aliquet tellus. Nam sodales commodo lorem, non porta
+                  leo posuere ac. In non elit accumsan nibh consectetur
+                  elementum vitae vitae nibh. Nulla hendrerit metus sem, mattis
+                  vehicula mi fringilla et. Ut a lacus nec sem vestibulum
+                  sodales. Suspendisse potenti. Donec euismod libero at
+                  malesuada tincidunt.
+                </p>
+                <div class="card-buttons">
+                  <button class="card-btn favorite">
+                    <img class="card-btn--icon" src="./assets/star-add.svg" />
+                  </button>
+                  <button class="card-btn watchlater">
+                    <img class="card-btn--icon" src="./assets/seen.svg" />
+                  </button>
+                  <button class="card-btn share">
+                    <img class="card-btn--icon" src="./assets/share.svg" />
+                  </button>
                 </div>
-            </section>
-            <section id="mainboard">
-                <div class="projects">
-                    <h2>Your Projects</h2>
-                    <div class="card">
-                        <h3 class="card-title">
-                        </h3>
-                        <p class="card-body">
+              </div>
+              <div class="card">
+                <h3 class="card-title">The Next Big Project</h3>
+                <p class="card-body">
+                  Nulla facilisi. Donec id purus eu tellus imperdiet lobortis.
+                  Sed in gravida arcu, ut ullamcorper ex. Mauris et mauris nec
+                  lectus luctus ultricies. Suspendisse potenti. Quisque
+                  imperdiet tincidunt nisl, in maximus sem porta quis. Nunc eget
+                  hendrerit orci, suscipit volutpat purus. Nullam in sapien
+                  ultrices, fermentum quam vel, porttitor risus. Mauris sed
+                  egestas magna. Pellentesque pretium risus vel metus tincidunt
+                  porttitor. Nulla consectetur justo at leo sagittis tincidunt.
+                  Nullam mattis mauris id diam consequat blandit. Ut a ante
+                  lectus. Aliquam non porta dolor, non varius arcu. Nullam
+                  feugiat id diam at ullamcorper. Vivamus at ultrices dui.
+                </p>
+                <div class="card-buttons">
+                  <button class="card-btn favorite">
+                    <img class="card-btn--icon" src="./assets/star-add.svg" />
+                  </button>
+                  <button class="card-btn watchlater">
+                    <img class="card-btn--icon" src="./assets/seen.svg" />
+                  </button>
+                  <button class="card-btn share">
+                    <img class="card-btn--icon" src="./assets/share.svg" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="section-2">
+            <div class="announcements">
+              <h3 class="annoucements-header">Announcements</h3>
+              <div class="announcements-table">
+                <div class="announcement-item">
+                  <h5 class="announcement-title">
+                    Site Maintenance
+                  </h5>
+                  <p class="announcement-body">
 
-                        </p>
-                        <button class="btn-favorite"></button>
-                        <button class="btn-watchlater"></button>
-                        <button class="btn-share"></button>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-title">
-                        </h3>
-                        <p class="card-body">
-                            
-                        </p>
-                        <button class="btn-favorite"></button>
-                        <button class="btn-watchlater"></button>
-                        <button class="btn-share"></button>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-title">
-                        </h3>
-                        <p class="card-body">
-                            
-                        </p>
-                        <button class="btn-favorite"></button>
-                        <button class="btn-watchlater"></button>
-                        <button class="btn-share"></button>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-title">
-                        </h3>
-                        <p class="card-body">
-                            
-                        </p>
-                        <button class="btn-favorite"></button>
-                        <button class="btn-watchlater"></button>
-                        <button class="btn-share"></button>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-title">
-                        </h3>
-                        <p class="card-body">
-                            
-                        </p>
-                        <button class="btn-favorite"></button>
-                        <button class="btn-watchlater"></button>
-                        <button class="btn-share"></button>
-                    </div>
-                    <div class="card">
-                        <h3 class="card-title">
-                        </h3>
-                        <p class="card-body">
-                            
-                        </p>
-                        <button class="btn-favorite"></button>
-                        <button class="btn-watchlater"></button>
-                        <button class="btn-share"></button>
-                    </div>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus, nulla a pretium fringilla, mauris tellus ornare mauris, id iaculis augue sapien id diam. Proin eu ullamcorper nisl, in euismod ex. Phasellus in luctus turpis, quis blandit risus. Nunc tristique ultrices sapien iaculis tincidunt. Maecenas tempus ligula eu metus rutrum gravida. Aenean sit amet facilisis lacus. Sed et libero eu lacus placerat mattis. Ut sem dui, auctor tincidunt felis ut, vulputate feugiat turpis. 
+                  </p>
                 </div>
-                <div class="announcements">
-                    <h3>Announcements</h3>
-                    <div class="announcements-tables">
-                        <div class="announcement-item">
-                            <h5 class="announcement-title"></h5>
-                            <p class="announcement-body"></p>
-                        </div>
-                        <div class="announcement-item">
-                            <h5 class="announcement-title"></h5>
-                            <p class="announcement-body"></p>
-                        </div>
-                        <div class="announcement-item">
-                            <h5 class="announcement-title"></h5>
-                            <p class="announcement-body"></p>
-                        </div>
-                    </div>
+                <div class="announcement-item">
+                  <h5 class="announcement-title">
+                    Policy Update
+                  </h5>
+                  <p class="announcement-body">
+                    Vivamus nec luctus elit, id sodales dolor. In finibus bibendum elit, quis scelerisque orci rhoncus vel. Fusce interdum at arcu a lobortis. Integer non pharetra purus.
+                  </p>
                 </div>
-                <div class="trending-table">
-                    <h3>Trending</h3>
-                    <div class="trending-item">
-                        <img alt="Trending user profile picture" class="trending-user-pfp">
-                        <h5 class="trending-user-name"></h5>
-                        <p class="trending-project"></p>
-                    </div>
-                    <div class="trending-item">
-                        <img alt="Trending user profile picture" class="trending-user-pfp">
-                        <h5 class="trending-user-name"></h5>
-                        <p class="trending-project"></p>
-                    </div>
-                    <div class="trending-item">
-                        <img alt="Trending user profile picture" class="trending-user-pfp">
-                        <h5 class="trending-user-name"></h5>
-                        <p class="trending-project"></p>
-                    </div>
-                    <div class="trending-item">
-                        <img alt="Trending user profile picture" class="trending-user-pfp">
-                        <h5 class="trending-user-name"></h5>
-                        <p class="trending-project"></p>
-                    </div>
+                <div class="announcement-item">
+                  <h5 class="announcement-title">New Major Event</h5>
+                  <p class="announcement-body">
+                    Maecenas interdum nunc non purus vulputate, vel convallis sem mollis. Phasellus ut ex pellentesque, auctor est eget, pellentesque quam.
+                  </p>
                 </div>
-            </section>
-        </div>
+              </div>
+            </div>
+            <div class="trending-table">
+              <h3 class="trending-header">Trending</h3>
+              <div class="trending-grid">
+                <div class="trending-item">
+                  <img
+                    alt="Trending user profile picture"
+                    class="trending-user-pfp"
+                    src="./assets/male.svg"
+                  />
+                  <p class="trending-body">@username<br><span class="trending-project">
+                  Not So Cool Tribute Page</span></p>
+                </div>
+                <div class="trending-item">
+                  <img
+                    alt="Trending user profile picture"
+                    class="trending-user-pfp"
+                    src="./assets/female.svg"
+                  />
+                  <p class="trending-body">
+                  @suspisciousZealot<br><span class="trending-project"> 
+                  HiperMegaCool Tribute Page</span></p>
+                </div>
+                <div class="trending-item">
+                  <img
+                    alt="Trending user profile picture"
+                    class="trending-user-pfp"
+                    src="./assets/female.svg"
+                  />
+                  <p class="trending-body">@newgamepp<br><span class="trending-project">
+                    Chess Engine in Assembly</p>
+                </div>
+                <div class="trending-item">
+                  <img
+                    alt="Trending user profile picture"
+                    class="trending-user-pfp"
+                    src="./assets/male.svg"
+                  />
+                  <p class="trending-body">@ceoOfCSS<br>
+                    <span class="trending-project">
+                    New Library Build From Scratch</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-</body>
+  </body>
 </html>
